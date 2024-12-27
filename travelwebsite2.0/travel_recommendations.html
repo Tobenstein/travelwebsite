@@ -3,35 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="travel_recommendation.css">
-    <title>Travel Recommendation</title>
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
     <header>
+      <div class="logo"><b>Tobestan Travel Tavern</b></div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
-            <div class="search-container">
-                <input type="text" id="searchBar" placeholder="Search for a destination...">
-                <button id="searchBtn">Search</button>
-                <button id="resetBtn">Reset</button>
-            </div>
         </nav>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search destinations...">
+            <button id="searchBtn">Search</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+        
     </header>
 
-    <!-- Main Content -->
     <main>
-        <section id="home">
-            <h1>Welcome to Our Travel Recommendations</h1>
-            <p>Explore the best destinations around the world!</p>
-        </section>
+        <section id="home" class="hero">
+            <h1>Welcome to Tobestan Travel Tavern</h1>
+      <p>
+        The world's #1 travel site for travelling the world.
+          </p>  
+      </section>
 
-        <section id="about">
-           <h2>About Us</h2>
+        <section id="about" class="about">
+            <h2>About Us</h2>
             <p>We are the leading site for helping you find your next travel destination.
               <br>
               Let us help you find your next adventure by contacting us today!
@@ -64,27 +66,39 @@
 
           <div class="worker">
             <img src="https://cdn-icons-png.flaticon.com/128/11891/11891884.png"/>
-            <h6>Slippery Pete</h6>
+            <h6>Slippery Petek</h6>
             <p>1 year experience</p>
           </div>  
           
-          </p></section>
+          </p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="message">How can we help you?</label>
+                <textarea id="message" maxlength="500" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
 
         <section id="results">
             <h2>Search Results</h2>
-            <ul id="resultList"></ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form id="contactForm">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <input type="submit" value="Send">
-            </form>
+            <div id="resultContainer"></div>
         </section>
     </main>
 
-    <script src="travel_recommendation.js"></script>
+    <footer>
+        <p>&copy; 2023 Tobestan Travel Tavern. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

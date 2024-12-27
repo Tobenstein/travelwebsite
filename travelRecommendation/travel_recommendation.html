@@ -39,7 +39,7 @@
               Also, follow us on social media, because what is life witout analytics?
               
              <br>
-              Meet our team:
+              But first, meet our team:
               <br>
               
                <!-- workers -->
@@ -52,20 +52,23 @@
 
         <div class="worker">
             <img src="https://cdn-icons-png.flaticon.com/128/11891/11891907.png"/>
-            <h6>Luigi</h6>
-            <p>6 years experience</p>
+            <p>Luigi</p>
+            <h6>6 years experience</h6>
+            
           </div>  
 
           <div class="worker">
             <img src="https://cdn-icons-png.flaticon.com/128/11891/11891887.png"/>
-            <h6>Joe</h6>
-            <p>8 years experiece</p>
+            <p>Joe</p>
+            <h6>8 years experiece</h6>
+           
           </div>  
 
           <div class="worker">
             <img src="https://cdn-icons-png.flaticon.com/128/11891/11891884.png"/>
-            <h6>Slippery Pete</h6>
-            <p>1 year experience</p>
+            <p>Slippery Pete</p>
+            <h6>1 year experience</h6>
+            
           </div>  
           
           </p></section>
@@ -75,12 +78,22 @@
             <ul id="resultList"></ul>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="contact">
             <h2>Contact Us</h2>
             <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <br>
+
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <input type="submit" value="Send">
+                <input type="email" id="email" required>
+                <br>
+
+                
+                <textarea id="message" maxlength="500" required placeholder="How can we help you?"></textarea>
+                <br>
+
+                <button type="submit">Send</button>
             </form>
         </section>
     </main>
